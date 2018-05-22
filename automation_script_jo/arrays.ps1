@@ -38,11 +38,11 @@ foreach($processElement in $Processes)
 
 # Exporting content of the "arrayOfProcesses" to CSV file
 Write-Host "`n********* Export content of the "arrayOfProcesses" to CSV *********"
-$arrayOfProcesses | select 'ProcessName', 'WorkingSet' | Export-Csv .\file.csv  -NoTypeInformation
+$arrayOfProcesses | select 'ProcessName', 'WorkingSet' | Export-Csv .\csv\processes.csv  -NoTypeInformation
 
 # Import content of the CSV file to new array
 Write-Host "`n********* Import content of the CSV file to new array *********"
-$CSVImport = Import-Csv .\file.csv
+$CSVImport = Import-Csv .\csv\processes.csv
 
 # Process the content of the array
 Write-Host "`n`n********* Import content of the CSV file to new array *********"
