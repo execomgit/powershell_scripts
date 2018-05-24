@@ -6,6 +6,7 @@ function ydl {
         [ValidateSet('audio', 'video')]
         [string]$type = 'audio',
         [switch]$u,
+        #[string]$ydlpath = "$env:userprofile\Dropbox\Documents\PSScripts\youtube\youtube-dl.exe",
         [string]$ydlpath = "$env:userprofile\Dropbox\Documents\PSScripts\youtube\youtube-dl.exe",
         [ValidateSet('auto', 'best', 'worst')]
         [string]$quality = 'auto'
